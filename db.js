@@ -1,11 +1,14 @@
-const mysql = require('mysql2');
+const mysql = require('mysql');
 
 const db = mysql.createConnection({
-  host: 'localhost',
+  host: 'gondola.proxy.rlwy.net',
   user: 'root',
-  password: '2100030184',
-  database: 'school_db'
+  password: 'KTmZTfiLyXnaQuYdyjZrZQaJSkxVjMzo',
+  database: 'railway',
+  port: 18964
 });
+
+
 
 db.connect(err => {
   if (err) {
